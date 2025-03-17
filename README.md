@@ -8,11 +8,11 @@
     - [Open Source Package Management](#open-source-package-management)
     - [Git](#git)
     - [Nodejs](#nodejs)
-    - [Install Ungit](#install-ungit)
-    - [Configure Ungit](#configure-ungit)
+  - [Install Ungit](#install-ungit)
+  - [Configure Ungit](#configure-ungit)
       - [Set Path Variable for Ungit](#set-path-variable-for-ungit)
       - [Setup config file](#setup-config-file)
-    - [Start Ungit](#start-ungit)
+  - [Start Ungit](#start-ungit)
 
 
 ## Pre-requisite
@@ -36,7 +36,7 @@ Terminal started, thanks for using Code for IBM i. Current directory is /home/RA
 -bash-5.2$ 
 ```
 
-
+<br>
 ### Open Source Package Management
 In your bash terminal, check whether yum is installed by entering,
 ```shell
@@ -60,6 +60,7 @@ export PATH=/QOpenSys/pkgs/bin:$PATH
 ```
 Finally, enter `ctrl+shift+j` again to reopen a new terminal with path variable included in it. 
 
+<br>
 ### Git 
 Check whether Git is installed by entering,
 ```sh
@@ -70,6 +71,7 @@ If not installed, then install it by using,
 yum install git
 ```
 
+<br>
 ### Nodejs
 Check whether Nodejs is installed by entering,
 ```sh
@@ -84,17 +86,20 @@ If not installed, then follow these steps to install:
   ```sh
   yum install nodejs22.ppc64
   ```
-### Install Ungit
+
+<br>
+## Install Ungit
 Once Nodejs is installed, you can use the `npm` (Node Package Management) to install Ungit using,
 ```sh
 yum install -g ungit
 ```
 Note: The `-g` flag means ungit is installed at global level. 
 
-### Configure Ungit
+<br>
+## Configure Ungit
 Since we have installed ungit at global level, the binaries are stored at the location `/QOpenSys/pkgs/lib/nodejs22/lib/node_modules/ungit/bin/`. Note that my Nodejs version is 22, but if you installed a different version then your path would be different.
 
-#### Set Path Variable for Ungit
+### Set Path Variable for Ungit
 We need to include this path in the `.profile` file just like we did before.
 
 
@@ -109,7 +114,7 @@ export PATH=/QOpenSys/pkgs/lib/nodejs22/lib/node_modules/ungit/bin:$PATH
 ```
 Finally, enter `ctrl+shift+j` again to reopen a new terminal with path variable included in it. 
 
-#### Setup config file
+### Setup config file
 It is important to create a config file which will be used by ungit during runtime. 
 ```shell
 cd && touch .ungitrc
@@ -128,7 +133,8 @@ cd && touch .ungitrc
   "ungitBindIp": "0.0.0.0"
 }
 ```
-### Start Ungit
+
+## Start Ungit
 
 ```sh
 ungit --ungitBindIp=0.0.0.0
