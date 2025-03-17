@@ -72,6 +72,7 @@ yum install git
 ```
 
 <br>
+
 ### Nodejs
 Check whether Nodejs is installed by entering,
 ```sh
@@ -88,6 +89,7 @@ If not installed, then follow these steps to install:
   ```
 
 <br>
+
 ## Install Ungit
 Once Nodejs is installed, you can use the `npm` (Node Package Management) to install Ungit using,
 ```sh
@@ -96,8 +98,11 @@ yum install -g ungit
 Note: The `-g` flag means ungit is installed at global level. 
 
 <br>
+
 ## Configure Ungit
 Since we have installed ungit at global level, the binaries are stored at the location `/QOpenSys/pkgs/lib/nodejs22/lib/node_modules/ungit/bin/`. Note that my Nodejs version is 22, but if you installed a different version then your path would be different.
+
+<br>
 
 ### Set Path Variable for Ungit
 We need to include this path in the `.profile` file just like we did before.
@@ -113,6 +118,8 @@ export PATH=/QOpenSys/pkgs/bin:$PATH
 export PATH=/QOpenSys/pkgs/lib/nodejs22/lib/node_modules/ungit/bin:$PATH
 ```
 Finally, enter `ctrl+shift+j` again to reopen a new terminal with path variable included in it. 
+
+<br>
 
 ### Setup config file
 It is important to create a config file which will be used by ungit during runtime. 
@@ -133,6 +140,8 @@ cd && touch .ungitrc
   "ungitBindIp": "0.0.0.0"
 }
 ```
+
+<br>
 
 ## Start Ungit
 
