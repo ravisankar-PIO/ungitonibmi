@@ -61,6 +61,7 @@ export PATH=/QOpenSys/pkgs/bin:$PATH
 Finally, enter `ctrl+shift+j` again to reopen a new terminal with path variable included in it. 
 
 <br>
+
 ### Git 
 Check whether Git is installed by entering,
 ```sh
