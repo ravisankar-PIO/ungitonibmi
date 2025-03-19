@@ -94,7 +94,7 @@ If not installed, then follow these steps to install:
 ## Install Ungit
 Once Nodejs is installed, you can use the `npm` (Node Package Management) to install Ungit using,
 ```sh
-yum install -g ungit
+npm install -g ungit
 ```
 Note: The `-g` flag means ungit is installed at global level. 
 
