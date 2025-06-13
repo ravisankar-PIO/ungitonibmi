@@ -37,6 +37,7 @@ Terminal started, thanks for using Code for IBM i. Current directory is /home/RA
 ```
 
 <br>
+
 ### Open Source Package Management
 In your bash terminal, check whether yum is installed by entering,
 ```shell
