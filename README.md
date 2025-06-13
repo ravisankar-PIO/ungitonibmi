@@ -22,7 +22,7 @@ We will be using *bash* shell that is supported by *code-for-i* to install and r
 #### What is *bash* shell?
 We all knew QSH in IBMi. If QSH is like RPG III, then *bash* is like modern RPGLE. It is user friendly, supports color text and offers much more convenience. 
 
-Login to your server using VS Code. Once connected, click on the bottom right bell notification icon and select, `change shell to bash` 
+Login to your IBM i server using VS Code. Once connected, click on the bottom right bell notification icon and select, `change shell to bash` 
 
 ![bash](https://raw.githubusercontent.com/ravisankar-PIO/devopsonibmi/advanced/images/bash.png)
 
